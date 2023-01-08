@@ -1,3 +1,4 @@
+const readline = require('readline')
 // Inicializar la base de datos con los datos mínimos para funcionar
 
 // Cargamos los modelos
@@ -7,7 +8,10 @@ console.log("Initializing DB");
 
 async function main() {
     // Preguntar al usuario si está seguro
-    // TODO
+    const continuar = await preguntaSiNo('Estas seguro, seturo que quieres borrar la bade de datos? [n]')
+    if (!continuar) {
+        process.exit();
+    }
 
     // Connectar a la base de datos
     const connection = require('../lib/connectMongoose');
@@ -113,4 +117,19 @@ async function initAnuncios() {
 
 main().catch(err => console.log('Hubo un error', err));
 
+async function preguntaSiNo(texto) {
+    return new Promise((resolve, reject) => {
+        const interface = readline.createInterface({
+            input: process.stdin,
+            output: process.stdout
+        });
+        interface.question(texto, respuesta => {
+            if (respuesta.toLowerCase() === 'si') {
+                resolve(true);
+                return;
+            }
+            resolve(false);
+        })
+    })
+}
 
