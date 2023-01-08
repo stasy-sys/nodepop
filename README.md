@@ -17,5 +17,5 @@ MONGODB="mongodb://172.23.32.1:27017/nodepop" npm run init-db
 Start the application in development with:
 
 ```sh
-MONGODB="mongodb://172.23.32.1:27017/cursonode" npm run start
+MONGODB="mongodb://172.23.32.1:27017/nodepop" npm run start
 ```
