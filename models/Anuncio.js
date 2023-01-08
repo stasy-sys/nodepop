@@ -10,8 +10,10 @@ const anuncioSchema = mongoose.Schema({
     foto: String,
     tags: [String]
 })
-anuncioSchema.statics.lista = function(filtro) {
+anuncioSchema.statics.lista = function(filtro, skip, limit) {
     const query = Anuncio.find(filtro);
+    query.skip(skip);
+    query.limit(limit);
     return query.exec()
 }
 

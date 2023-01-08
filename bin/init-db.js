@@ -40,6 +40,71 @@ async function initAnuncios() {
             "foto": "iphone.png",
             "tags": [ "lifestyle", "mobile"]
             }
+            ,
+            {
+            "nombre": "iPhone 4G",
+            "venta": false,
+            "precio": 100.00,
+            "foto": "iphone.png",
+            "tags": [ "lifestyle", "mobile"]
+            }
+            ,
+            {
+            "nombre": "iPhone 5GX",
+            "venta": false,
+            "precio": 150.00,
+            "foto": "iphone.png",
+            "tags": [ "lifestyle", "mobile"]
+            }
+            ,
+            {
+            "nombre": "iPhone 6GSX",
+            "venta": false,
+            "precio": 250.00,
+            "foto": "iphone.png",
+            "tags": [ "lifestyle", "mobile"]
+            }
+            ,
+            {
+            "nombre": "iPhone 7G",
+            "venta": false,
+            "precio": 350.00,
+            "foto": "iphone.png",
+            "tags": [ "lifestyle", "mobile"]
+            }
+            ,
+            {
+            "nombre": "iPhone 8",
+            "venta": false,
+            "precio": 450.00,
+            "foto": "iphone.png",
+            "tags": [ "lifestyle", "mobile"]
+            }
+            ,
+            {
+            "nombre": "iPhone 9",
+            "venta": false,
+            "precio": 550.00,
+            "foto": "iphone.png",
+            "tags": [ "lifestyle", "mobile"]
+            }
+            ,
+            {
+            "nombre": "iPhone 10",
+            "venta": false,
+            "precio": 650.00,
+            "foto": "iphone.png",
+            "tags": [ "lifestyle", "mobile"]
+            }
+            ,
+            {
+            "nombre": "iPhone i11",
+            "venta": false,
+            "precio": 750.00,
+            "foto": "iphone.png",
+            "tags": [ "lifestyle", "mobile"]
+            }
+            
     ]);
     
     console.log(`Creados ${inserted.length} anuncios`)
